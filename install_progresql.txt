@@ -1,0 +1,726 @@
+Script started on 2026-02-15 05:33:06-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="83" LINES="18"]
+]0;root@ubuntu2004: ~root@ubuntu2004:~# python3 --version
+Python 3.8.5
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install[K[K[K[K[K[K[Kupdate 
+[33m0% [Working][0m[33m0% [Connecting to security.ubuntu.com (2620:2d:4000:1::102)][0m[33m                                                            0% [Waiting for headers][0m                        Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [128 kB]
+[33m0% [1 InRelease 13.8 kB/128 kB 11%][0m[33m0% [Connecting to ubuntu-mirror-3.ps6.canonical.com (2620:2d:4002:1::103)] [1 InRe[0m[33m0% [Connecting to ubuntu-mirror-3.ps6.canonical.com (91.189.91.83)] [1 InRelease 5[0m[33m0% [Connecting to ubuntu-mirror-3.ps6.canonical.com (91.189.91.83)] [1 InRelease 5[0m[33m                                                                                  0% [Waiting for headers][0m[33m0% [Waiting for headers][0m                        Hit:2 http://us.archive.ubuntu.com/ubuntu focal InRelease
+[33m0% [Waiting for headers][0m[33m0% [Waiting for headers] [Waiting for headers][0m                                              Get:3 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [3,564 kB]
+[33m0% [Waiting for headers] [3 Packages 5,391 B/3,564 kB 0%][0m                                                         Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates InRelease [128 kB]
+[33m0% [4 InRelease 3,406 B/128 kB 3%] [3 Packages 54.7 kB/3,564 kB 2%][0m[33m0% [4 InRelease 24.5 kB/128 kB 19%] [3 Packages 288 kB/3,564 kB 8%][0m[33m0% [4 InRelease 72.7 kB/128 kB 57%] [3 Packages 881 kB/3,564 kB 25%][0m[33m                                                                    0% [3 Packages 2,100 kB/3,564 kB 59%][0m[33m0% [Waiting for headers] [3 Packages 2,590 kB/3,564 kB 73%][0m[33m                                                           0% [Waiting for headers][0m[33m0% [3 Packages store 0 B] [Waiting for headers] [Waiting for headers][0m                                                                     Get:5 http://us.archive.ubuntu.com/ubuntu focal-backports InRelease [128 kB]
+[33m0% [3 Packages store 0 B] [5 InRelease 2,168 B/128 kB 2%] [Waiting for headers][0m                                                                               Get:6 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [881 kB]
+[33m0% [3 Packages store 0 B] [5 InRelease 81.4 kB/128 kB 64%] [6 Packages 8,209 B/881[0m[33m                                                                                  0% [5 InRelease 98.7 kB/128 kB 77%] [6 Packages 512 kB/881 kB 58%][0m[33m                                                                  0% [5 InRelease 111 kB/128 kB 87%][0m[33m0% [6 Packages store 0 B] [5 InRelease 111 kB/128 kB 87%][0m                                                         Get:7 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [518 kB]
+[33m0% [6 Packages store 0 B] [5 InRelease 111 kB/128 kB 87%] [7 Translation-en 0 B/51[0m[33m                                                                                  0% [6 Packages store 0 B] [7 Translation-en 470 kB/518 kB 91%][0m[33m                                                              0% [6 Packages store 0 B] [Waiting for headers][0m                                               Get:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [74.7 kB]
+[33m0% [6 Packages store 0 B] [Waiting for headers] [8 Components-amd64 0 B/74.7 kB 0%[0m                                                                                  Get:9 http://security.ubuntu.com/ubuntu focal-security/main DEP-11 48x48 Icons [27.5 kB]
+[33m0% [6 Packages store 0 B] [Waiting for headers] [9 icons-48x48 9,171 B/27.5 kB 33%[0m[33m                                                                                  0% [Waiting for headers] [9 icons-48x48 27.5 kB/27.5 kB 100%][0m[33m0% [7 Translation-en store 0 B] [Waiting for headers] [9 icons-48x48 27.5 kB/27.5 [0m[33m                                                                                  0% [7 Translation-en store 0 B] [Waiting for headers] [Waiting for headers][0m                                                                           Get:10 http://security.ubuntu.com/ubuntu focal-security/main DEP-11 64x64 Icons [47.5 kB]
+[33m0% [7 Translation-en store 0 B] [Waiting for headers] [10 icons-64x64 9,617 B/47.5[0m[33m                                                                                  0% [7 Translation-en store 0 B] [Waiting for headers] [Waiting for headers][0m                                                                           Get:11 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [14.4 kB]
+[33m0% [7 Translation-en store 0 B] [Waiting for headers] [11 Commands-amd64 14.4 kB/1[0m[33m                                                                                  0% [7 Translation-en store 0 B] [Waiting for headers] [Waiting for headers][0m                                                                           Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted i386 Packages [42.5 kB]
+[33m0% [7 Translation-en store 0 B] [Waiting for headers] [12 Packages 31.7 kB/42.5 kB[0m                                                                                  Get:13 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [3,768 kB]
+[33m0% [7 Translation-en store 0 B] [Waiting for headers] [13 Packages 36.9 kB/3,768 k[0m[33m30% [7 Translation-en store 0 B] [Waiting for headers] [13 Packages 690 kB/3,768 k[0m[33m                                                                                  31% [Waiting for headers] [13 Packages 877 kB/3,768 kB 23%][0m[33m31% [8 Components-amd64 store 0 B] [Waiting for headers] [13 Packages 877 kB/3,768[0m[33m                                                                                  31% [Waiting for headers] [13 Packages 879 kB/3,768 kB 23%][0m[33m31% [9 icons-48x48 store 0 B] [Waiting for headers] [13 Packages 879 kB/3,768 kB 2[0m[33m                                                                                  31% [Waiting for headers] [13 Packages 879 kB/3,768 kB 23%][0m[33m31% [10 icons-64x64 store 0 B] [Waiting for headers] [13 Packages 879 kB/3,768 kB [0m[33m                                                                                  31% [Waiting for headers] [13 Packages 879 kB/3,768 kB 23%][0m[33m31% [11 Commands-amd64 store 0 B] [Waiting for headers] [13 Packages 879 kB/3,768 [0m[33m                                                                                  31% [Waiting for headers] [13 Packages 879 kB/3,768 kB 23%][0m[33m31% [12 Packages store 0 B] [Waiting for headers] [13 Packages 879 kB/3,768 kB 23%[0m[33m                                                                                  32% [Waiting for headers] [13 Packages 879 kB/3,768 kB 23%][0m[33m35% [Waiting for headers] [13 Packages 1,950 kB/3,768 kB 52%]       1,164 kB/s 16s[0m                                                                                  Get:14 http://us.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [1,114 kB]
+[33m                                                                                  37% [14 Packages 12.1 kB/1,114 kB 1%] [13 Packages 2,806 kB/3,768 kB 74%][0m[33m40% [14 Packages 56.7 kB/1,114 kB 5%]                               1,164 kB/s 15s[0m[33m40% [13 Packages store 0 B] [14 Packages 56.7 kB/1,114 kB 5%] [Waiting for headers[0m                                                                                  Get:15 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [527 kB]
+[33m40% [13 Packages store 0 B] [14 Packages 56.7 kB/1,114 kB 5%] [15 Translation-en 0[0m[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%]       1,164 kB/s 14s[0m                                                                                  Get:16 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 DEP-11 Metadata [212 B]
+[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%] [16 Components-amd64[0m[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%]       1,164 kB/s 14s[0m                                                                                  Get:17 http://security.ubuntu.com/ubuntu focal-security/restricted DEP-11 48x48 Icons [29 B]
+[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%] [17 icons-48x48 0 B/[0m[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%]       1,164 kB/s 14s[0m                                                                                  Get:18 http://security.ubuntu.com/ubuntu focal-security/restricted DEP-11 64x64 Icons [29 B]
+[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%] [18 icons-64x64 0 B/[0m[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%]       1,164 kB/s 14s[0m                                                                                  Get:19 http://security.ubuntu.com/ubuntu focal-security/restricted DEP-11 64x64@2 Icons [29 B]
+[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%] [19 icons-64x64@2 0 [0m[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%]       1,164 kB/s 14s[0m                                                                                  Get:20 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [584 B]
+[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%] [20 Commands-amd64 0[0m[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%]       1,164 kB/s 14s[0m                                                                                  Get:21 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [698 kB]
+[33m42% [13 Packages store 0 B] [14 Packages 161 kB/1,114 kB 14%] [21 Packages 0 B/698[0m[33m                                                                                  44% [14 Packages 168 kB/1,114 kB 15%] [21 Packages 407 kB/698 kB 58%][0m[33m44% [15 Translation-en store 0 B] [14 Packages 168 kB/1,114 kB 15%] [21 Packages 4[0m[33m                                                                                  44% [14 Packages 218 kB/1,114 kB 20%] [21 Packages 407 kB/698 kB 58%][0m[33m44% [16 Components-amd64 store 0 B] [14 Packages 218 kB/1,114 kB 20%] [21 Packages[0m[33m                                                                                  44% [14 Packages 218 kB/1,114 kB 20%] [21 Packages 407 kB/698 kB 58%][0m[33m44% [17 icons-48x48 store 0 B] [14 Packages 218 kB/1,114 kB 20%] [21 Packages 407 [0m[33m                                                                                  44% [14 Packages 218 kB/1,114 kB 20%] [21 Packages 407 kB/698 kB 58%][0m[33m44% [14 Packages 218 kB/1,114 kB 20%] [21 Packages 407 kB/698 kB 58%][0m[33m44% [19 icons-64x64@2 store 0 B] [14 Packages 218 kB/1,114 kB 20%] [21 Packages 40[0m[33m                                                                                  44% [14 Packages 218 kB/1,114 kB 20%] [21 Packages 407 kB/698 kB 58%][0m[33m44% [20 Commands-amd64 store 0 B] [14 Packages 218 kB/1,114 kB 20%] [21 Packages 4[0m[33m                                                                                  44% [14 Packages 218 kB/1,114 kB 20%] [21 Packages 407 kB/698 kB 58%][0m[33m45% [14 Packages 312 kB/1,114 kB 28%]                               1,164 kB/s 13s[0m                                                                                  Get:22 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1,040 kB]
+[33m                                                                                  45% [14 Packages 312 kB/1,114 kB 28%] [22 Packages 0 B/1,040 kB 0%][0m[33m46% [21 Packages store 0 B] [14 Packages 312 kB/1,114 kB 28%] [22 Packages 178 kB/[0m[33m49% [21 Packages store 0 B] [14 Packages 323 kB/1,114 kB 29%]       1,164 kB/s 12s[0m                                                                                  Get:23 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [221 kB]
+[33m49% [21 Packages store 0 B] [14 Packages 323 kB/1,114 kB 29%] [23 Translation-en 0[0m[33m                                                                                  49% [14 Packages 323 kB/1,114 kB 29%] [23 Translation-en 65.6 kB/221 kB 30%][0m[33m49% [22 Packages store 0 B] [14 Packages 323 kB/1,114 kB 29%] [23 Translation-en 6[0m[33m                                                                                  49% [14 Packages 325 kB/1,114 kB 29%] [23 Translation-en 92.3 kB/221 kB 42%][0m[33m50% [14 Packages 359 kB/1,114 kB 32%]                               1,164 kB/s 12s[0m[33m                                                                                  50% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:24 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [159 kB]
+[33m50% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [24 Components[0m[33m                                                                                  50% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:25 http://security.ubuntu.com/ubuntu focal-security/universe DEP-11 48x48 Icons [95.4 kB]
+[33m50% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [25 icons-48x4[0m[33m                                                                                  50% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:26 http://security.ubuntu.com/ubuntu focal-security/universe DEP-11 64x64 Icons [166 kB]
+[33m50% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [26 icons-64x6[0m[33m                                                                                  51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:27 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [22.4 kB]
+[33m51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [27 Commands-a[0m[33m                                                                                  51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:28 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [26.6 kB]
+[33m51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [28 Packages 0[0m[33m                                                                                  51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:29 http://security.ubuntu.com/ubuntu focal-security/multiverse i386 Packages [7,204 B]
+[33m51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [29 Packages 0[0m[33m                                                                                  51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:30 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [6,448 B]
+[33m51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [30 Translatio[0m[33m                                                                                  51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m                                                                   Get:31 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 DEP-11 Metadata [936 B]
+[33m51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [31 Components[0m[33m                                                                                  51% [23 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%][0m[33m51% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m51% [24 Components-amd64 store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for[0m[33m51% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m51% [25 icons-48x48 store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for head[0m[33m51% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m51% [26 icons-64x64 store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for head[0m[33m51% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m51% [27 Commands-amd64 store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for h[0m[33m51% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m51% [28 Packages store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers[0m[33m52% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m52% [29 Packages store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers[0m[33m52% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m52% [30 Translation-en store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for h[0m[33m52% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m52% [31 Components-amd64 store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for[0m[33m52% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m                                                                                  Get:32 http://security.ubuntu.com/ubuntu focal-security/multiverse DEP-11 48x48 Icons [1,867 B]
+[33m                                                                                  52% [14 Packages 359 kB/1,114 kB 32%] [32 icons-48x48 1,867 B/1,867 B 100%][0m[33m52% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m[33m52% [32 icons-48x48 store 0 B] [14 Packages 359 kB/1,114 kB 32%] [Waiting for head[0m[33m52% [14 Packages 359 kB/1,114 kB 32%] [Waiting for headers]         1,164 kB/s 12s[0m                                                                                  Get:33 http://security.ubuntu.com/ubuntu focal-security/multiverse DEP-11 64x64 Icons [2,497 B]
+[33m                                                                                  52% [14 Packages 406 kB/1,114 kB 36%] [33 icons-64x64 2,497 B/2,497 B 100%][0m[33m52% [14 Packages 406 kB/1,114 kB 36%] [Waiting for headers]         1,164 kB/s 12s[0m                                                                                  Get:34 http://security.ubuntu.com/ubuntu focal-security/multiverse DEP-11 64x64@2 Icons [29 B]
+[33m                                                                                  52% [14 Packages 406 kB/1,114 kB 36%] [34 icons-64x64@2 29 B/29 B 100%][0m                                                                       Get:35 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [604 B]
+[33m52% [14 Packages 406 kB/1,114 kB 36%] [35 Commands-amd64 604 B/604 B 100%][0m[33m52% [14 Packages 406 kB/1,114 kB 36%]                               1,164 kB/s 12s[0m[33m52% [33 icons-64x64 store 0 B] [14 Packages 406 kB/1,114 kB 36%]    1,164 kB/s 12s[0m[33m52% [14 Packages 406 kB/1,114 kB 36%]                               1,164 kB/s 12s[0m[33m52% [34 icons-64x64@2 store 0 B] [14 Packages 406 kB/1,114 kB 36%]  1,164 kB/s 12s[0m[33m52% [14 Packages 406 kB/1,114 kB 36%]                               1,164 kB/s 12s[0m[33m                                                                                  52% [35 Commands-amd64 store 0 B] [14 Packages 406 kB/1,114 kB 36%][0m[33m52% [14 Packages 406 kB/1,114 kB 36%]                               1,164 kB/s 12s[0m[33m53% [14 Packages 463 kB/1,114 kB 42%]                               1,164 kB/s 12s[0m[33m54% [14 Packages 894 kB/1,114 kB 80%]                               1,164 kB/s 11s[0m[33m55% [Waiting for headers]                                           1,164 kB/s 11s[0m                                                                                  Get:36 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3,957 kB]
+[33m55% [36 Packages 65.5 kB/3,957 kB 2%]                               1,164 kB/s 11s[0m[33m55% [14 Packages store 0 B] [36 Packages 65.5 kB/3,957 kB 2%]       1,164 kB/s 11s[0m[33m55% [36 Packages 93.9 kB/3,957 kB 2%]                               1,164 kB/s 11s[0m[33m56% [36 Packages 474 kB/3,957 kB 12%]                               1,164 kB/s 11s[0m[33m61% [36 Packages 2,156 kB/3,957 kB 54%]                              1,164 kB/s 9s[0m[33m65% [36 Packages 3,645 kB/3,957 kB 92%]                              1,164 kB/s 8s[0m[33m66% [Working]                                                        1,164 kB/s 8s[0m[33m66% [36 Packages store 0 B]                                          1,164 kB/s 8s[0m                                                                                  Get:37 http://us.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [600 kB]
+[33m66% [36 Packages store 0 B] [37 Translation-en 0 B/600 kB 0%]        1,164 kB/s 8s[0m[33m68% [36 Packages store 0 B]                                          1,164 kB/s 7s[0m                                                                                  Get:38 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [276 kB]
+[33m68% [36 Packages store 0 B] [38 Components-amd64 0 B/276 kB 0%]      1,164 kB/s 7s[0m[33m69% [36 Packages store 0 B]                                          1,164 kB/s 7s[0m                                                                                  Get:39 http://us.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 48x48 Icons [64.2 kB]
+[33m69% [36 Packages store 0 B] [39 icons-48x48 0 B/64.2 kB 0%]          1,164 kB/s 7s[0m[33m69% [36 Packages store 0 B]                                          1,164 kB/s 7s[0m                                                                                  Get:40 http://us.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 64x64 Icons [103 kB]
+[33m69% [36 Packages store 0 B] [40 icons-64x64 0 B/103 kB 0%]           1,164 kB/s 7s[0m[33m70% [36 Packages store 0 B]                                          1,164 kB/s 7s[0m                                                                                  Get:41 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [18.0 kB]
+[33m70% [36 Packages store 0 B] [41 Commands-amd64 0 B/18.0 kB 0%]       1,164 kB/s 7s[0m[33m70% [36 Packages store 0 B]                                          1,164 kB/s 7s[0m                                                                                  Get:42 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted i386 Packages [44.1 kB]
+[33m70% [36 Packages store 0 B] [42 Packages 0 B/44.1 kB 0%]             1,164 kB/s 7s[0m[33m70% [36 Packages store 0 B]                                          1,164 kB/s 7s[0m                                                                                  Get:43 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [3,922 kB]
+[33m70% [36 Packages store 0 B] [43 Packages 0 B/3,922 kB 0%]            1,164 kB/s 7s[0m[33m73% [43 Packages 1,176 kB/3,922 kB 30%]                              1,164 kB/s 6s[0m[33m                                                                                  73% [37 Translation-en store 0 B] [43 Packages 1,176 kB/3,922 kB 30%][0m[33m73% [43 Packages 1,176 kB/3,922 kB 30%]                              1,164 kB/s 6s[0m[33m                                                                                  73% [38 Components-amd64 store 0 B] [43 Packages 1,176 kB/3,922 kB 30%][0m[33m73% [43 Packages 1,176 kB/3,922 kB 30%]                              1,164 kB/s 6s[0m[33m73% [39 icons-48x48 store 0 B] [43 Packages 1,176 kB/3,922 kB 30%]   1,164 kB/s 6s[0m[33m74% [43 Packages 1,176 kB/3,922 kB 30%]                              1,164 kB/s 6s[0m[33m74% [40 icons-64x64 store 0 B] [43 Packages 1,176 kB/3,922 kB 30%]   1,164 kB/s 6s[0m[33m74% [43 Packages 1,176 kB/3,922 kB 30%]                              1,164 kB/s 6s[0m[33m                                                                                  74% [41 Commands-amd64 store 0 B] [43 Packages 1,176 kB/3,922 kB 30%][0m[33m74% [43 Packages 1,176 kB/3,922 kB 30%]                              1,164 kB/s 6s[0m[33m74% [42 Packages store 0 B] [43 Packages 1,176 kB/3,922 kB 30%]      1,164 kB/s 6s[0m[33m74% [43 Packages 1,176 kB/3,922 kB 30%]                              1,164 kB/s 6s[0m[33m79% [43 Packages 2,781 kB/3,922 kB 71%]                              2,241 kB/s 2s[0m[33m82% [Working]                                                        2,241 kB/s 2s[0m[33m82% [43 Packages store 0 B] [Waiting for headers]                    2,241 kB/s 2s[0m                                                                                  Get:44 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [548 kB]
+[33m82% [43 Packages store 0 B] [44 Translation-en 0 B/548 kB 0%]        2,241 kB/s 2s[0m[33m84% [44 Translation-en 458 kB/548 kB 84%]                            2,241 kB/s 1s[0m[33m84% [44 Translation-en 458 kB/548 kB 84%]                            2,241 kB/s 1s[0m[33m84% [Working]                                                        2,241 kB/s 1s[0m[33m84% [44 Translation-en store 0 B]                                    2,241 kB/s 1s[0m                                                                                  Get:45 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 DEP-11 Metadata [212 B]
+[33m                                                                                  84% [44 Translation-en store 0 B] [45 Components-amd64 0 B/212 B 0%][0m[33m84% [44 Translation-en store 0 B]                                    2,241 kB/s 1s[0m                                                                                  Get:46 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted DEP-11 48x48 Icons [29 B]
+[33m84% [44 Translation-en store 0 B] [46 icons-48x48 0 B/29 B 0%]       2,241 kB/s 1s[0m[33m84% [44 Translation-en store 0 B]                                    2,241 kB/s 1s[0m                                                                                  Get:47 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted DEP-11 64x64 Icons [29 B]
+[33m84% [44 Translation-en store 0 B] [47 icons-64x64 0 B/29 B 0%]       2,241 kB/s 1s[0m[33m84% [44 Translation-en store 0 B]                                    2,241 kB/s 1s[0m                                                                                  Get:48 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted DEP-11 64x64@2 Icons [29 B]
+[33m84% [44 Translation-en store 0 B] [48 icons-64x64@2 0 B/29 B 0%]     2,241 kB/s 1s[0m[33m84% [44 Translation-en store 0 B]                                    2,241 kB/s 1s[0m                                                                                  Get:49 http://us.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [604 B]
+[33m84% [44 Translation-en store 0 B] [49 Commands-amd64 0 B/604 B 0%]   2,241 kB/s 1s[0m[33m84% [44 Translation-en store 0 B]                                    2,241 kB/s 1s[0m                                                                                  Get:50 http://us.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [823 kB]
+[33m84% [44 Translation-en store 0 B] [50 Packages 0 B/823 kB 0%]        2,241 kB/s 1s[0m[33m86% [44 Translation-en store 0 B]                                    2,241 kB/s 1s[0m                                                                                  Get:51 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,262 kB]
+[33m86% [44 Translation-en store 0 B] [51 Packages 0 B/1,262 kB 0%]      2,241 kB/s 1s[0m[33m90% [51 Packages 1,194 kB/1,262 kB 95%]                              2,241 kB/s 0s[0m[33m                                                                                  90% [45 Components-amd64 store 0 B] [51 Packages 1,194 kB/1,262 kB 95%][0m[33m90% [51 Packages 1,194 kB/1,262 kB 95%]                              2,241 kB/s 0s[0m[33m90% [46 icons-48x48 store 0 B] [51 Packages 1,194 kB/1,262 kB 95%]   2,241 kB/s 0s[0m[33m90% [51 Packages 1,194 kB/1,262 kB 95%]                              2,241 kB/s 0s[0m[33m90% [47 icons-64x64 store 0 B] [51 Packages 1,194 kB/1,262 kB 95%]   2,241 kB/s 0s[0m[33m90% [51 Packages 1,194 kB/1,262 kB 95%]                              2,241 kB/s 0s[0m[33m                                                                                  90% [48 icons-64x64@2 store 0 B] [51 Packages 1,194 kB/1,262 kB 95%][0m[33m90% [51 Packages 1,194 kB/1,262 kB 95%]                              2,241 kB/s 0s[0m[33m                                                                                  90% [49 Commands-amd64 store 0 B] [51 Packages 1,194 kB/1,262 kB 95%][0m[33m90% [51 Packages 1,194 kB/1,262 kB 95%]                              2,241 kB/s 0s[0m[33m90% [50 Packages store 0 B] [51 Packages 1,194 kB/1,262 kB 95%]      2,241 kB/s 0s[0m[33m90% [51 Packages 1,194 kB/1,262 kB 95%]                              2,241 kB/s 0s[0m[33m91% [Working]                                                        2,241 kB/s 0s[0m[33m91% [51 Packages store 0 B]                                          2,241 kB/s 0s[0m                                                                                  Get:52 http://us.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [303 kB]
+[33m91% [51 Packages store 0 B] [52 Translation-en 0 B/303 kB 0%]        2,241 kB/s 0s[0m[33m92% [51 Packages store 0 B]                                          2,241 kB/s 0s[0m                                                                                  Get:53 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [446 kB]
+[33m92% [51 Packages store 0 B] [53 Components-amd64 0 B/446 kB 0%]      2,241 kB/s 0s[0m[33m93% [51 Packages store 0 B]                                          2,241 kB/s 0s[0m[33m93% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m93% [52 Translation-en store 0 B] [Waiting for headers]              2,241 kB/s 0s[0m[33m93% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m93% [53 Components-amd64 store 0 B] [Waiting for headers]            2,241 kB/s 0s[0m[33m93% [Waiting for headers]                                            2,241 kB/s 0s[0m                                                                                  Get:54 http://us.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 48x48 Icons [297 kB]
+[33m93% [54 icons-48x48 0 B/297 kB 0%]                                   2,241 kB/s 0s[0m[33m94% [Working]                                                        2,241 kB/s 0s[0m[33m94% [54 icons-48x48 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:55 http://us.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 64x64 Icons [520 kB]
+[33m94% [54 icons-48x48 store 0 B] [55 icons-64x64 0 B/520 kB 0%]        2,241 kB/s 0s[0m[33m94% [55 icons-64x64 45.1 kB/520 kB 9%]                               2,241 kB/s 0s[0m[33m94% [55 icons-64x64 45.1 kB/520 kB 9%]                               2,241 kB/s 0s[0m[33m94% [55 icons-64x64 45.1 kB/520 kB 9%]                               2,241 kB/s 0s[0m[33m94% [55 icons-64x64 45.1 kB/520 kB 9%]                               2,241 kB/s 0s[0m[33m96% [Working]                                                        2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B] [Waiting for headers]                 2,241 kB/s 0s[0m                                                                                  Get:56 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [29.3 kB]
+[33m96% [55 icons-64x64 store 0 B] [56 Commands-amd64 0 B/29.3 kB 0%]    2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:57 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse i386 Packages [8,440 B]
+[33m96% [55 icons-64x64 store 0 B] [57 Packages 0 B/8,440 B 0%]          2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:58 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.7 kB]
+[33m96% [55 icons-64x64 store 0 B] [58 Packages 0 B/29.7 kB 0%]          2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:59 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [8,316 B]
+[33m96% [55 icons-64x64 store 0 B] [59 Translation-en 0 B/8,316 B 0%]    2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:60 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [940 B]
+[33m96% [55 icons-64x64 store 0 B] [60 Components-amd64 0 B/940 B 0%]    2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:61 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse DEP-11 48x48 Icons [1,867 B]
+[33m96% [55 icons-64x64 store 0 B] [61 icons-48x48 0 B/1,867 B 0%]       2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:62 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse DEP-11 64x64 Icons [2,497 B]
+[33m96% [55 icons-64x64 store 0 B] [62 icons-64x64 0 B/2,497 B 0%]       2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:63 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [688 B]
+[33m96% [55 icons-64x64 store 0 B] [63 Commands-amd64 0 B/688 B 0%]      2,241 kB/s 0s[0m[33m96% [55 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:64 http://us.archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [45.7 kB]
+[33m96% [55 icons-64x64 store 0 B] [64 Packages 0 B/45.7 kB 0%]          2,241 kB/s 0s[0m[33m96% [64 Packages 28.7 kB/45.7 kB 63%]                                2,241 kB/s 0s[0m[33m96% [56 Commands-amd64 store 0 B] [64 Packages 36.6 kB/45.7 kB 80%]  2,241 kB/s 0s[0m[33m96% [56 Commands-amd64 store 0 B]                                    2,241 kB/s 0s[0m[33m96% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m96% [57 Packages store 0 B] [Waiting for headers]                    2,241 kB/s 0s[0m[33m96% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m96% [58 Packages store 0 B] [Waiting for headers]                    2,241 kB/s 0s[0m[33m97% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m97% [59 Translation-en store 0 B] [Waiting for headers]              2,241 kB/s 0s[0m[33m97% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m97% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m97% [61 icons-48x48 store 0 B] [Waiting for headers]                 2,241 kB/s 0s[0m[33m97% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m97% [62 icons-64x64 store 0 B] [Waiting for headers]                 2,241 kB/s 0s[0m[33m97% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m97% [63 Commands-amd64 store 0 B] [Waiting for headers]              2,241 kB/s 0s[0m[33m97% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m97% [64 Packages store 0 B] [Waiting for headers]                    2,241 kB/s 0s[0m[33m97% [Waiting for headers]                                            2,241 kB/s 0s[0m                                                                                  Get:65 http://us.archive.ubuntu.com/ubuntu focal-backports/main i386 Packages [36.1 kB]
+[33m97% [65 Packages 2,239 B/36.1 kB 6%]                                 2,241 kB/s 0s[0m                                                                                  Get:66 http://us.archive.ubuntu.com/ubuntu focal-backports/main Translation-en [16.3 kB]
+[33m97% [66 Translation-en 16.3 kB/16.3 kB 100%]                         2,241 kB/s 0s[0m                                                                                  Get:67 http://us.archive.ubuntu.com/ubuntu focal-backports/main amd64 DEP-11 Metadata [7,976 B]
+[33m97% [67 Components-amd64 7,976 B/7,976 B 100%]                       2,241 kB/s 0s[0m                                                                                  Get:68 http://us.archive.ubuntu.com/ubuntu focal-backports/main DEP-11 48x48 Icons [7,156 B]
+[33m97% [65 Packages store 0 B] [68 icons-48x48 554 B/7,156 B 8%]        2,241 kB/s 0s[0m[33m97% [68 icons-48x48 7,156 B/7,156 B 100%]                            2,241 kB/s 0s[0m[33m97% [Working]                                                        2,241 kB/s 0s[0m                                                                                  Get:69 http://us.archive.ubuntu.com/ubuntu focal-backports/main DEP-11 64x64 Icons [10.7 kB]
+[33m97% [69 icons-64x64 0 B/10.7 kB 0%]                                  2,241 kB/s 0s[0m[33m97% [Working]                                                        2,241 kB/s 0s[0m[33m97% [66 Translation-en store 0 B] [Waiting for headers]              2,241 kB/s 0s[0m[33m98% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m98% [67 Components-amd64 store 0 B] [Waiting for headers]            2,241 kB/s 0s[0m[33m98% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m98% [68 icons-48x48 store 0 B] [Waiting for headers]                 2,241 kB/s 0s[0m[33m98% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m98% [69 icons-64x64 store 0 B] [Waiting for headers]                 2,241 kB/s 0s[0m[33m98% [Waiting for headers]                                            2,241 kB/s 0s[0m                                                                                  Get:70 http://us.archive.ubuntu.com/ubuntu focal-backports/main DEP-11 64x64@2 Icons [29 B]
+[33m98% [70 icons-64x64@2 0 B/29 B 0%]                                   2,241 kB/s 0s[0m[33m98% [Working]                                                        2,241 kB/s 0s[0m                                                                                  Get:71 http://us.archive.ubuntu.com/ubuntu focal-backports/main amd64 c-n-f Metadata [1,420 B]
+[33m98% [71 Commands-amd64 0 B/1,420 B 0%]                               2,241 kB/s 0s[0m[33m98% [Working]                                                        2,241 kB/s 0s[0m                                                                                  Get:72 http://us.archive.ubuntu.com/ubuntu focal-backports/restricted amd64 DEP-11 Metadata [212 B]
+[33m98% [72 Components-amd64 0 B/212 B 0%]                               2,241 kB/s 0s[0m[33m98% [Working]                                                        2,241 kB/s 0s[0m                                                                                  Get:73 http://us.archive.ubuntu.com/ubuntu focal-backports/restricted DEP-11 48x48 Icons [29 B]
+[33m98% [73 icons-48x48 0 B/29 B 0%]                                     2,241 kB/s 0s[0m[33m98% [Working]                                                        2,241 kB/s 0s[0m                                                                                  Get:74 http://us.archive.ubuntu.com/ubuntu focal-backports/restricted DEP-11 64x64 Icons [29 B]
+[33m98% [74 icons-64x64 0 B/29 B 0%]                                     2,241 kB/s 0s[0m[33m98% [Working]                                                        2,241 kB/s 0s[0m                                                                                  Get:75 http://us.archive.ubuntu.com/ubuntu focal-backports/restricted DEP-11 64x64@2 Icons [29 B]
+[33m98% [75 icons-64x64@2 0 B/29 B 0%]                                   2,241 kB/s 0s[0m[33m98% [70 icons-64x64@2 store 0 B] [75 icons-64x64@2 29 B/29 B 100%]   2,241 kB/s 0s[0m[33m98% [75 icons-64x64@2 29 B/29 B 100%]                                2,241 kB/s 0s[0m[33m98% [Working]                                                        2,241 kB/s 0s[0m[33m98% [71 Commands-amd64 store 0 B]                                    2,241 kB/s 0s[0m[33m98% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m98% [72 Components-amd64 store 0 B] [Waiting for headers]            2,241 kB/s 0s[0m                                                                                  Get:76 http://us.archive.ubuntu.com/ubuntu focal-backports/universe i386 Packages [13.8 kB]
+[33m98% [72 Components-amd64 store 161 B] [76 Packages 0 B/13.8 kB 0%]   2,241 kB/s 0s[0m[33m98% [76 Packages 0 B/13.8 kB 0%]                                     2,241 kB/s 0s[0m[33m98% [73 icons-48x48 store 0 B] [76 Packages 5,953 B/13.8 kB 43%]     2,241 kB/s 0s[0m[33m98% [76 Packages 5,953 B/13.8 kB 43%]                                2,241 kB/s 0s[0m[33m98% [74 icons-64x64 store 0 B] [76 Packages 5,953 B/13.8 kB 43%]     2,241 kB/s 0s[0m[33m98% [76 Packages 5,953 B/13.8 kB 43%]                                2,241 kB/s 0s[0m[33m99% [76 Packages 5,953 B/13.8 kB 43%]                                2,241 kB/s 0s[0m[33m99% [Working]                                                        2,241 kB/s 0s[0m[33m99% [76 Packages store 0 B]                                          2,241 kB/s 0s[0m                                                                                  Get:77 http://us.archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [25.0 kB]
+[33m99% [76 Packages store 0 B] [77 Packages 0 B/25.0 kB 0%]             2,241 kB/s 0s[0m[33m99% [77 Packages 5,498 B/25.0 kB 22%]                                2,241 kB/s 0s[0m[33m99% [Working]                                                        2,241 kB/s 0s[0m[33m99% [77 Packages store 0 B] [Waiting for headers]                    2,241 kB/s 0s[0m                                                                                  Get:78 http://us.archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [16.3 kB]
+[33m99% [77 Packages store 0 B] [78 Translation-en 0 B/16.3 kB 0%]       2,241 kB/s 0s[0m[33m99% [77 Packages store 0 B]                                          2,241 kB/s 0s[0m[33m99% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m99% [78 Translation-en store 0 B] [Waiting for headers]              2,241 kB/s 0s[0m[33m99% [Waiting for headers]                                            2,241 kB/s 0s[0m                                                                                  Get:79 http://us.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [30.6 kB]
+[33m99% [79 Components-amd64 0 B/30.6 kB 0%]                             2,241 kB/s 0s[0m[33m99% [Working]                                                        2,241 kB/s 0s[0m[33m99% [79 Components-amd64 store 0 B] [Waiting for headers]            2,241 kB/s 0s[0m                                                                                  Get:80 http://us.archive.ubuntu.com/ubuntu focal-backports/universe DEP-11 48x48 Icons [13.3 kB]
+[33m99% [79 Components-amd64 store 0 B] [80 icons-48x48 0 B/13.3 kB 0%]  2,241 kB/s 0s[0m[33m99% [79 Components-amd64 store 0 B]                                  2,241 kB/s 0s[0m[33m99% [Waiting for headers]                                            2,241 kB/s 0s[0m[33m99% [80 icons-48x48 store 0 B] [Waiting for headers]                 2,241 kB/s 0s[0m                                                                                  Get:81 http://us.archive.ubuntu.com/ubuntu focal-backports/universe DEP-11 64x64 Icons [22.7 kB]
+[33m99% [80 icons-48x48 store 0 B] [81 icons-64x64 0 B/22.7 kB 0%]       2,241 kB/s 0s[0m[33m99% [81 icons-64x64 18.4 kB/22.7 kB 81%]                             2,241 kB/s 0s[0m[33m99% [Working]                                                        2,241 kB/s 0s[0m                                                                                  Get:82 http://us.archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [880 B]
+[33m99% [81 icons-64x64 store 0 B] [82 Commands-amd64 0 B/880 B 0%]      2,241 kB/s 0s[0m[33m99% [81 icons-64x64 store 0 B]                                       2,241 kB/s 0s[0m                                                                                  Get:83 http://us.archive.ubuntu.com/ubuntu focal-backports/multiverse amd64 DEP-11 Metadata [212 B]
+[33m99% [81 icons-64x64 store 0 B] [83 Components-amd64 0 B/212 B 0%]    2,241 kB/s 0s[0m[33m99% [83 Components-amd64 212 B/212 B 100%]                           2,241 kB/s 0s[0m[33m99% [Working]                                                        2,241 kB/s 0s[0m[33m99% [82 Commands-amd64 store 0 B]                                    2,241 kB/s 0s[0m[33m100% [Waiting for headers]                                           2,241 kB/s 0s[0m[33m100% [Waiting for headers]                                           2,241 kB/s 0s[0m[33m100% [Waiting for headers]                                           2,241 kB/s 0s[0m[33m100% [Waiting for headers]                                           2,241 kB/s 0s[0m                                                                                  Get:84 http://us.archive.ubuntu.com/ubuntu focal-backports/multiverse DEP-11 48x48 Icons [29 B]
+[33m100% [84 icons-48x48 29 B/29 B 100%]                                   891 kB/s 0s[0m                                                                                  Get:85 http://us.archive.ubuntu.com/ubuntu focal-backports/multiverse DEP-11 64x64 Icons [29 B]
+[33m100% [Waiting for headers]                                             891 kB/s 0s[0m                                                                                  Get:86 http://us.archive.ubuntu.com/ubuntu focal-backports/multiverse DEP-11 64x64@2 Icons [29 B]
+[33m100% [Working]                                                         891 kB/s 0s[0m[33m100% [84 icons-48x48 store 0 B]                                        891 kB/s 0s[0m[33m100% [Working]                                                         891 kB/s 0s[0m[33m100% [85 icons-64x64 store 0 B]                                        891 kB/s 0s[0m[33m100% [Working]                                                         891 kB/s 0s[0m[33m100% [86 icons-64x64@2 store 0 B]                                      891 kB/s 0s[0m[33m100% [Working]                                                         891 kB/s 0s[0m                                                                                  Fetched 26.9 MB in 19s (1,421 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 1%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 21%Reading package lists... 21%Reading package lists... 30%Reading package lists... 30%Reading package lists... 39%Reading package lists... 39%Reading package lists... 39%Reading package lists... 39%Reading package lists... 39%Reading package lists... 39%Reading package lists... 39%Reading package lists... 39%Reading package lists... 47%Reading package lists... 47%Reading package lists... 48%Reading package lists... 48%Reading package lists... 54%Reading package lists... 54%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 62%Reading package lists... 65%Reading package lists... 65%Reading package lists... 65%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 71%Reading package lists... 71%Reading package lists... 71%Reading package lists... 71%Reading package lists... 77%Reading package lists... 77%Reading package lists... 79%Reading package lists... 79%Reading package lists... 84%Reading package lists... 84%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+652 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install postgresql postgresql-contrib
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libllvm10 libpq5 postgresql-12 postgresql-client-12 postgresql-client-common
+  postgresql-common sysstat
+Suggested packages:
+  postgresql-doc postgresql-doc-12 libjson-perl isag
+The following NEW packages will be installed:
+  libllvm10 libpq5 postgresql postgresql-12 postgresql-client-12
+  postgresql-client-common postgresql-common postgresql-contrib sysstat
+0 upgraded, 9 newly installed, 0 to remove and 652 not upgraded.
+Need to get 30.7 MB of archives.
+After this operation, 122 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m[33m0% [Connecting to ubuntu-mirror-2.ps6.canonical.com (91.189.91.82)][0m[33m                                                                   0% [Waiting for headers][0m                        Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libllvm10 amd64 1:10.0.0-4ubuntu1 [15.3 MB]
+[33m0% [1 libllvm10 4,657 B/15.3 MB 0%][0m[33m0% [1 libllvm10 28.2 kB/15.3 MB 0%][0m[33m0% [1 libllvm10 71.5 kB/15.3 MB 0%][0m[33m                                   0% [1 libllvm10 183 kB/15.3 MB 1%][0m[33m1% [1 libllvm10 486 kB/15.3 MB 3%][0m[33m3% [1 libllvm10 1,284 kB/15.3 MB 8%][0m[33m8% [1 libllvm10 3,046 kB/15.3 MB 20%][0m[33m16% [1 libllvm10 6,052 kB/15.3 MB 40%][0m[33m20% [1 libllvm10 7,653 kB/15.3 MB 50%][0m[33m25% [1 libllvm10 9,633 kB/15.3 MB 63%][0m[33m25% [1 libllvm10 9,633 kB/15.3 MB 63%]                              1,591 kB/s 13s[0m[33m33% [1 libllvm10 12.7 MB/15.3 MB 83%]                               1,591 kB/s 11s[0m[33m42% [Working]                                                        1,591 kB/s 9s[0m                                                                                  Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libpq5 amd64 12.22-0ubuntu0.20.04.4 [119 kB]
+[33m42% [2 libpq5 0 B/119 kB 0%]                                         1,591 kB/s 9s[0m                                                                                  Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-client-common all 214ubuntu0.1 [28.2 kB]
+[33m45% [3 postgresql-client-common 12.1 kB/28.2 kB 43%]                 1,591 kB/s 9s[0m[33m47% [Working]                                                        1,591 kB/s 9s[0m                                                                                  Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-client-12 amd64 12.22-0ubuntu0.20.04.4 [1,073 kB]
+[33m47% [4 postgresql-client-12 7,146 B/1,073 kB 1%]                     1,591 kB/s 9s[0m[33m52% [Working]                                                        1,591 kB/s 8s[0m                                                                                  Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-common all 214ubuntu0.1 [169 kB]
+[33m52% [5 postgresql-common 0 B/169 kB 0%]                              1,591 kB/s 8s[0m[33m55% [Waiting for headers]                                            1,591 kB/s 8s[0m                                                                                  Get:6 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-12 amd64 12.22-0ubuntu0.20.04.4 [13.6 MB]
+[33m55% [6 postgresql-12 5,067 B/13.6 MB 0%]                             1,591 kB/s 8s[0m[33m57% [6 postgresql-12 819 kB/13.6 MB 6%]                              1,591 kB/s 8s[0m[33m64% [6 postgresql-12 3,449 kB/13.6 MB 25%]                           1,591 kB/s 6s[0m[33m68% [6 postgresql-12 5,244 kB/13.6 MB 39%]                           1,591 kB/s 5s[0m[33m75% [6 postgresql-12 7,822 kB/13.6 MB 58%]                           1,591 kB/s 3s[0m[33m83% [6 postgresql-12 10.8 MB/13.6 MB 80%]                            1,591 kB/s 2s[0m[33m83% [6 postgresql-12 10.8 MB/13.6 MB 80%]                            1,591 kB/s 2s[0m[33m90% [6 postgresql-12 13.4 MB/13.6 MB 99%]                            1,591 kB/s 0s[0m[33m92% [Working]                                                        1,591 kB/s 0s[0m                                                                                  Get:7 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql all 12+214ubuntu0.1 [3,924 B]
+[33m92% [7 postgresql 0 B/3,924 B 0%]                                    1,591 kB/s 0s[0m                                                                                  Get:8 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-contrib all 12+214ubuntu0.1 [3,932 B]
+[33m94% [8 postgresql-contrib 3,932 B/3,932 B 100%]                      1,591 kB/s 0s[0m                                                                                  Get:9 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 sysstat amd64 12.2.0-2ubuntu0.3 [448 kB]
+[33m97% [9 sysstat 90.4 kB/448 kB 20%]                                   1,591 kB/s 0s[0m[33m100% [Working]                                                       1,591 kB/s 0s[0m                                                                                  Fetched 30.7 MB in 11s (2,753 kB/s)
+Preconfiguring packages ...
+
+7[0;17r8[1ASelecting previously unselected package libllvm10:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 153754 files and directories currently installed.)
+Preparing to unpack .../0-libllvm10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+7[18;0f[42m[30mProgress: [  0%][49m[39m [.............................................................] 87[18;0f[42m[30mProgress: [  3%][49m[39m [#............................................................] 8Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+7[18;0f[42m[30mProgress: [  5%][49m[39m [###..........................................................] 8Selecting previously unselected package libpq5:amd64.
+Preparing to unpack .../1-libpq5_12.22-0ubuntu0.20.04.4_amd64.deb ...
+7[18;0f[42m[30mProgress: [  8%][49m[39m [####.........................................................] 8Unpacking libpq5:amd64 (12.22-0ubuntu0.20.04.4) ...
+7[18;0f[42m[30mProgress: [ 11%][49m[39m [######.......................................................] 8Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../2-postgresql-client-common_214ubuntu0.1_all.deb ...
+7[18;0f[42m[30mProgress: [ 14%][49m[39m [########.....................................................] 8Unpacking postgresql-client-common (214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 16%][49m[39m [#########....................................................] 8Selecting previously unselected package postgresql-client-12.
+Preparing to unpack .../3-postgresql-client-12_12.22-0ubuntu0.20.04.4_amd64.deb ...
+7[18;0f[42m[30mProgress: [ 19%][49m[39m [###########..................................................] 8Unpacking postgresql-client-12 (12.22-0ubuntu0.20.04.4) ...
+7[18;0f[42m[30mProgress: [ 22%][49m[39m [#############................................................] 8Selecting previously unselected package postgresql-common.
+Preparing to unpack .../4-postgresql-common_214ubuntu0.1_all.deb ...
+7[18;0f[42m[30mProgress: [ 24%][49m[39m [##############...............................................] 8Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 27%][49m[39m [################.............................................] 8Selecting previously unselected package postgresql-12.
+Preparing to unpack .../5-postgresql-12_12.22-0ubuntu0.20.04.4_amd64.deb ...
+7[18;0f[42m[30mProgress: [ 30%][49m[39m [##################...........................................] 8Unpacking postgresql-12 (12.22-0ubuntu0.20.04.4) ...
+7[18;0f[42m[30mProgress: [ 32%][49m[39m [###################..........................................] 8Selecting previously unselected package postgresql.
+Preparing to unpack .../6-postgresql_12+214ubuntu0.1_all.deb ...
+7[18;0f[42m[30mProgress: [ 35%][49m[39m [#####################........................................] 8Unpacking postgresql (12+214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 38%][49m[39m [#######################......................................] 8Selecting previously unselected package postgresql-contrib.
+Preparing to unpack .../7-postgresql-contrib_12+214ubuntu0.1_all.deb ...
+7[18;0f[42m[30mProgress: [ 41%][49m[39m [########################.....................................] 8Unpacking postgresql-contrib (12+214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 43%][49m[39m [##########################...................................] 8Selecting previously unselected package sysstat.
+Preparing to unpack .../8-sysstat_12.2.0-2ubuntu0.3_amd64.deb ...
+7[18;0f[42m[30mProgress: [ 46%][49m[39m [############################.................................] 8Unpacking sysstat (12.2.0-2ubuntu0.3) ...
+7[18;0f[42m[30mProgress: [ 49%][49m[39m [#############################................................] 8Setting up postgresql-client-common (214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 51%][49m[39m [###############################..............................] 87[18;0f[42m[30mProgress: [ 54%][49m[39m [################################.............................] 8Setting up libpq5:amd64 (12.22-0ubuntu0.20.04.4) ...
+7[18;0f[42m[30mProgress: [ 57%][49m[39m [##################################...........................] 87[18;0f[42m[30mProgress: [ 59%][49m[39m [####################################.........................] 8Setting up libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+7[18;0f[42m[30mProgress: [ 62%][49m[39m [#####################################........................] 87[18;0f[42m[30mProgress: [ 65%][49m[39m [#######################################......................] 8Setting up postgresql-client-12 (12.22-0ubuntu0.20.04.4) ...
+7[18;0f[42m[30mProgress: [ 68%][49m[39m [#########################################....................] 8update-alternatives: using /usr/share/postgresql/12/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+7[18;0f[42m[30mProgress: [ 70%][49m[39m [##########################################...................] 8Setting up postgresql-common (214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 73%][49m[39m [############################################.................] 8Adding user postgres to group ssl-cert
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Created symlink /etc/systemd/system/multi-user.target.wants/postgresql.service → /lib/systemd/system/postgresql.service.
+7[18;0f[42m[30mProgress: [ 76%][49m[39m [##############################################...............] 8Setting up postgresql-12 (12.22-0ubuntu0.20.04.4) ...
+7[18;0f[42m[30mProgress: [ 78%][49m[39m [###############################################..............] 8Creating new PostgreSQL cluster 12/main ...
+/usr/lib/postgresql/12/bin/initdb -D /var/lib/postgresql/12/main --auth-local peer --auth-host md5
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/12/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... America/New_York
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctlcluster 12 main start
+
+Ver Cluster Port Status Owner    Data directory              Log file
+[31m12  main    5432 down   postgres /var/lib/postgresql/12/main /var/log/postgresql/postgresql-12-main.log[0m
+update-alternatives: using /usr/share/postgresql/12/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+7[18;0f[42m[30mProgress: [ 81%][49m[39m [#################################################............] 8Setting up sysstat (12.2.0-2ubuntu0.3) ...
+7[18;0f[42m[30mProgress: [ 84%][49m[39m [###################################################..........] 8
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Created symlink /etc/systemd/system/multi-user.target.wants/sysstat.service → /lib/systemd/system/sysstat.service.
+7[18;0f[42m[30mProgress: [ 86%][49m[39m [####################################################.........] 8Setting up postgresql-contrib (12+214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 89%][49m[39m [######################################################.......] 87[18;0f[42m[30mProgress: [ 92%][49m[39m [########################################################.....] 8Setting up postgresql (12+214ubuntu0.1) ...
+7[18;0f[42m[30mProgress: [ 95%][49m[39m [#########################################################....] 87[18;0f[42m[30mProgress: [ 97%][49m[39m [###########################################################..] 8Processing triggers for systemd (245.4-4ubuntu3.4) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+
+7[0;18r8[1A[J]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install postgresql postgresql-contrib[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo systemctl status postgresql
+[?1h=[0;1;32m●[0m postgresql.service - PostgreSQL RDBMS[m
+     Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor prese[m[7m>[27m
+     Active: [0;1;32mactive (exited)[0m since Sun 2026-02-15 05:40:10 EST; 1min 20s ago[m
+   Main PID: 6144 (code=exited, status=0/SUCCESS)[m
+      Tasks: 0 (limit: 4615)[m
+     Memory: 0B[m
+     CGroup: /system.slice/postgresql.service[m
+[m
+Feb 15 05:40:10 ubuntu2004 systemd[1]: Starting PostgreSQL RDBMS...[m
+Feb 15 05:40:10 ubuntu2004 systemd[1]: Finished PostgreSQL RDBMS.[m
+[7mlines 1-10/10 (END)[27m[K[K[K[7mlines 1-10/10 (END)[27m[K[K[K[7mlines 1-10/10 (END)[27m[K[K[K[7mlines 1-10/10 (END)[27m[K[K[K[7mlines 1-10/10 (END)[27m[K[K[K[7mlines 1-10/10 (END)[27m[K[K[K[7mlines 1-10/10 (END)[27m[K[K[?1l>]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo -i -u postgres
+postgres@ubuntu2004:~$ psql 
+psql (12.22 (Ubuntu 12.22-0ubuntu0.20.04.4))
+Type "help" for help.
+
+postgres=# create database mydb;
+CREATE DATABASE
+postgres=# create database mydb;[K[K[K[K[K[K[K[K[K[K[K[K[K[Kuser rahul with password '123456';
+CREATE ROLE
+postgres=# create user rahul with password '123456';[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgrant all privilege [K[Kes on daa[Ktabase mydb to rahul;
+GRANT
+postgres=# ^C
+postgres=# exit 
+postgres@ubuntu2004:~$ vim /etc/postgresql/*12/[K[K[K*/12/main/pg_hba.conf 
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.31, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.31
+apt install neovim      # version 0.4.3-3
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.31
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.31
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.31
+
+Ask your administrator to install one of them.
+
+postgres@ubuntu2004:~$ vim /etc/postgresql/12/main/pg_hba.conf [1P
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"/etc/postgresql/12/main/pg_hba.conf" 103 lines, 4933 characters[1;1H# PostgreSQL Client Authentication Configuration File
+# ===================================================
+#
+# Refer to the "Client Authentication" section in the PostgreSQL
+# documentation for a complete description of this file.  A short
+# synopsis follows.
+#
+# This file controls: which hosts are allowed to connect, how clients
+# are authenticated, which PostgreSQL user names they can use, which
+# databases they can access.  Records take one of these forms:
+#
+# local[9CDATABASE  USER  METHOD  [OPTIONS]
+# host[10CDATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostssl[7CDATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostnossl     DATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostgssenc    DATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostnogssenc  DATABASE  USER  ADDRESS  METHOD  [OPTIONS][1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[1;17r[17;1H
+[1;18r[17;1H#[18;1H[K[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# (The uppercase items must be replaced by actual values.)[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# The first field is the connection type: "local" is a Unix-domain[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# socket, "host" is either a plain or SSL-encrypted TCP/IP socket,[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "hostssl" is an SSL-encrypted TCP/IP socket, and "hostnossl" is a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# non-SSL TCP/IP socket.  Similarly, "hostgssenc" uses a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# GSSAPI-encrypted TCP/IP socket, while "hostnogssenc" uses a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# non-GSSAPI socket.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# DATABASE can be "all", "sameuser", "samerole", "replication", a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# database name, or a comma-separated list thereof. The "all"[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# keyword does not match "replication". Access to replication[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# must be enabled in a separate record (see example below).[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# USER can be "all", a user name, a group name prefixed with "+", or a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# comma-separated list thereof.  In both the DATABASE and USER fields[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# you can also write a file name prefixed with "@" to include names[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# from a separate file.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# ADDRESS specifies the set of hosts the record matches.  It can be a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# host name, or it is made up of an IP address and a CIDR mask that is[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# an integer (between 0 and 32 (IPv4) or 128 (IPv6) inclusive) that[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# specifies the number of significant bits in the mask.  A host name[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# that starts with a dot (.) matches a suffix of the actual host name.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Alternatively, you can write an IP address and netmask in separate[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# columns to specify the set of hosts.  Instead of a CIDR-address, you[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# can write "samehost" to match any of the server's own IP addresses,[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# or "samenet" to match any address in any subnet that the server is[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# directly connected to.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# METHOD can be "trust", "reject", "md5", "password", "scram-sha-256",[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "gss", "sspi", "ident", "peer", "pam", "ldap", "radius" or "cert".[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Note that "password" sends passwords in clear text; "md5" or[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "scram-sha-256" are preferred since they send encrypted passwords.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# OPTIONS are a set of options for the authentication in the format[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# NAME=VALUE.  The available options depend on the different[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# authentication methods -- refer to the "Client Authentication"[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# section in the documentation for a list of which options are[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# available for which authentication methods.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Database and user names containing spaces, commas, quotes and other[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# special characters must be quoted.  Quoting one of the keywords[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "all", "sameuser", "samerole" or "replication" makes the name lose[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# its special character, and just match a database or username with[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# that name.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# This file is read on server startup and when the server receives a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# SIGHUP signal.  If you edit the file on a running system, you have to[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# SIGHUP the server for the changes to take effect, run "pg_ctl reload",[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# or execute "SELECT pg_reload_conf()".[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Put your actual configuration here[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# ----------------------------------[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# If you want to allow non-local connections, you need to add more[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "host" records.  In that case you will also need to make PostgreSQL[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# listen on a non-local interface via the listen_addresses[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# configuration parameter, or via the -i or -h command line switches.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# DO NOT DISABLE![?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# If you change this first entry you will need to make sure that the[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# database superuser can access the database using some other method.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Noninteractive access to all databases is required during automatic[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# maintenance (custom daily cronjobs, replication, and similar tasks).[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Database administrative login by Unix domain socket[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hlocal   all[13Cpostgres[32Cpeer[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# TYPE  DATABASE[8CUSER[12CADDRESS[17CMETHOD[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "local" is for Unix domain socket connections only[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hlocal   all[13Call[37Cpeer[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# IPv4 local connections:[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hhost    all[13Call[13C127.0.0.1/32[12Cmd5[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# IPv6 local connections:[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hhost    all[13Call[13C::1/128[17Cmd5[?25h[16;1H[15;1H[14;1H[13;1Hlocal   all             all                                     pee[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?25l[13;17r[13;1H[L[1;18r[13;1HC[?25h[?2004h[>4;2m[?2004l[>4;m[?25l[13;17r[13;1H[L[1;18r[13;1HD[?25h[?2004h[>4;2m[?25l[13;17r[17;1H
+[1;18r[17;1H# IPv6 local connections:[13;1H[?25h[?25l[13;17r[17;1H
+[1;18r[17;1Hhost    all[13Call[13C::1/128[17Cmd5[13;1H[?25h[67C[?2004l[>4;mr[?25li[?25h[?25l[?25h[?2004h[>4;2m[?25l[13;69H[K[13;68H[?25h[?25l[18;1H:[?2004h[?25hq![?25l[?2004l[18;1H[K[18;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0tpostgres@ubuntu2004:~$ su - 
+Password: 
+]0;root@ubuntu2004: ~root@ubuntu2004:~# vi /etc/postgresql/12/main/pg_hba.conf
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"/etc/postgresql/12/main/pg_hba.conf" 103 lines, 4933 characters[1;1H# PostgreSQL Client Authentication Configuration File
+# ===================================================
+#
+# Refer to the "Client Authentication" section in the PostgreSQL
+# documentation for a complete description of this file.  A short
+# synopsis follows.
+#
+# This file controls: which hosts are allowed to connect, how clients
+# are authenticated, which PostgreSQL user names they can use, which
+# databases they can access.  Records take one of these forms:
+#
+# local[9CDATABASE  USER  METHOD  [OPTIONS]
+# host[10CDATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostssl[7CDATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostnossl     DATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostgssenc    DATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostnogssenc  DATABASE  USER  ADDRESS  METHOD  [OPTIONS][1;1H[?25h[?25l[18;1H[K[18;1H/[?2004h[?25hall[?25l[8;39H[?25h[?25l[18;1H[27m[23m[29m[m[H[2J[1;1H#
+# The first field is the connection type: "local" is a Unix-domain
+# socket, "host" is either a plain or SSL-encrypted TCP/IP socket,
+# "hostssl" is an SSL-encrypted TCP/IP socket, and "hostnossl" is a
+# non-SSL TCP/IP socket.  Similarly, "hostgssenc" uses a
+# GSSAPI-encrypted TCP/IP socket, while "hostnogssenc" uses a
+# non-GSSAPI socket.
+#
+# DATABASE can be "all", "sameuser", "samerole", "replication", a
+# database name, or a comma-separated list thereof. The "all"
+# keyword does not match "replication". Access to replication
+# must be enabled in a separate record (see example below).
+#
+# USER can be "all", a user name, a group name prefixed with "+", or a
+# comma-separated list thereof.  In both the DATABASE and USER fields
+# you can also write a file name prefixed with "@" to include names
+# from a separate file.[9;20H[?25h[?25l[18;1H/all[10;58H[?25h[?25l[18;1H[14;16H[?25h[?25l[18;1H[27m[23m[29m[m[H[2J[1;1H# OPTIONS are a set of options for the authentication in the format
+# NAME=VALUE.  The available options depend on the different
+# authentication methods -- refer to the "Client Authentication"
+# section in the documentation for a list of which options are
+# available for which authentication methods.
+#
+# Database and user names containing spaces, commas, quotes and other
+# special characters must be quoted.  Quoting one of the keywords
+# "all", "sameuser", "samerole" or "replication" makes the name lose
+# its special character, and just match a database or username with
+# that name.
+#
+# This file is read on server startup and when the server receives a
+# SIGHUP signal.  If you edit the file on a running system, you have to
+# SIGHUP the server for the changes to take effect, run "pg_ctl reload",
+# or execute "SELECT pg_reload_conf()".
+#[9;4H[?25h[?25l[18;1H/all[1;17r[1;1H[4M[1;18r[14;1H# Put your actual configuration here
+# ----------------------------------
+#
+# If you want to allow non-local connections, you need to add more[18;1H[K[17;18H[?25h[?25l
+/all[27m[23m[29m[m[H[2J[1;1H# configuration parameter, or via the -i or -h command line switches.[6;1H# DO NOT DISABLE!
+# If you change this first entry you will need to make sure that the
+# database superuser can access the database using some other method.
+# Noninteractive access to all databases is required during automatic
+# maintenance (custom daily cronjobs, replication, and similar tasks).
+#
+# Database administrative login by Unix domain socket
+local   all[13Cpostgres[32Cpeer
+
+# TYPE  DATABASE[8CUSER[12CADDRESS[17CMETHOD
+
+# "local" is for Unix domain socket connections only[9;28H[?25h[10;28H
+[12;28H[13;28H
+[15;28H
+[17;28H[?25l[1;17r[17;1H
+[1;18r[17;1Hlocal   all[13Call[37Cpeer[17;28H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# IPv4 local connections:[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hhost    all[13Call[13C127.0.0.1/32[12Cmd5[17;28H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# IPv6 local connections:[?25h[16;28H[15;25H[14;28H  [38C[?2004l[>4;mr[?25li[?25h[?25l[?25h[?2004h[>4;2m[?25l[14;69H[K[14;68H[?25h[15;25H[16;54H[15;25H[14;54H           pee[?2004l[>4;m[?25lm[?25h[?25ld[?25h[?25l5[?25h[?2004h[>4;2m5[?25l[14;68H[K[14;67H[?25h[?25l[18;1H:[?2004h[?25hwq[?25l[?2004l"/etc/postgresql/12/main/pg_hba.conf" 103 lines, 4932 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;root@ubuntu2004: ~root@ubuntu2004:~# vi /etc/postgresql/12/main/pg_hba.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kvi /etc/postgresql/12/main/pg_hba.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksu - postgres
+postgres@ubuntu2004:~$ psql
+psql (12.22 (Ubuntu 12.22-0ubuntu0.20.04.4))
+Type "help" for help.
+
+postgres=# exit 
+postgres@ubuntu2004:~$ psql -u rahul -d mt[Kydb -W
+/usr/lib/postgresql/12/bin/psql: invalid option -- 'u'
+Try "psql --help" for more information.
+postgres@ubuntu2004:~$ psql -u rahul -d mydb -W[Kw
+/usr/lib/postgresql/12/bin/psql: invalid option -- 'u'
+Try "psql --help" for more information.
+postgres@ubuntu2004:~$ [H[2Jpostgres@ubuntu2004:~$ psql -u rahul -d mydb -w[C[C[C[1P[1@U[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[KW
+Password: 
+psql: error: FATAL:  Peer authentication failed for user "rahul"
+postgres@ubuntu2004:~$ su - 
+Password: 
+]0;root@ubuntu2004: ~root@ubuntu2004:~# vi /etc/postgresql/12/main/pg_hba.conf
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"/etc/postgresql/12/main/pg_hba.conf" 103 lines, 4932 characters[1;1H# PostgreSQL Client Authentication Configuration File
+# ===================================================
+#
+# Refer to the "Client Authentication" section in the PostgreSQL
+# documentation for a complete description of this file.  A short
+# synopsis follows.
+#
+# This file controls: which hosts are allowed to connect, how clients
+# are authenticated, which PostgreSQL user names they can use, which
+# databases they can access.  Records take one of these forms:
+#
+# local[9CDATABASE  USER  METHOD  [OPTIONS]
+# host[10CDATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostssl[7CDATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostnossl     DATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostgssenc    DATABASE  USER  ADDRESS  METHOD  [OPTIONS]
+# hostnogssenc  DATABASE  USER  ADDRESS  METHOD  [OPTIONS][1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[?25l[1;17r[17;1H
+[1;18r[17;1H#[18;1H[K[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# (The uppercase items must be replaced by actual values.)[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# The first field is the connection type: "local" is a Unix-domain[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# socket, "host" is either a plain or SSL-encrypted TCP/IP socket,[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "hostssl" is an SSL-encrypted TCP/IP socket, and "hostnossl" is a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# non-SSL TCP/IP socket.  Similarly, "hostgssenc" uses a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# GSSAPI-encrypted TCP/IP socket, while "hostnogssenc" uses a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# non-GSSAPI socket.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# DATABASE can be "all", "sameuser", "samerole", "replication", a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# database name, or a comma-separated list thereof. The "all"[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# keyword does not match "replication". Access to replication[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# must be enabled in a separate record (see example below).[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# USER can be "all", a user name, a group name prefixed with "+", or a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# comma-separated list thereof.  In both the DATABASE and USER fields[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# you can also write a file name prefixed with "@" to include names[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# from a separate file.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# ADDRESS specifies the set of hosts the record matches.  It can be a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# host name, or it is made up of an IP address and a CIDR mask that is[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# an integer (between 0 and 32 (IPv4) or 128 (IPv6) inclusive) that[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# specifies the number of significant bits in the mask.  A host name[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# that starts with a dot (.) matches a suffix of the actual host name.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Alternatively, you can write an IP address and netmask in separate[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# columns to specify the set of hosts.  Instead of a CIDR-address, you[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# can write "samehost" to match any of the server's own IP addresses,[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# or "samenet" to match any address in any subnet that the server is[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# directly connected to.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# METHOD can be "trust", "reject", "md5", "password", "scram-sha-256",[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "gss", "sspi", "ident", "peer", "pam", "ldap", "radius" or "cert".[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Note that "password" sends passwords in clear text; "md5" or[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "scram-sha-256" are preferred since they send encrypted passwords.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# OPTIONS are a set of options for the authentication in the format[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# NAME=VALUE.  The available options depend on the different[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# authentication methods -- refer to the "Client Authentication"[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# section in the documentation for a list of which options are[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# available for which authentication methods.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Database and user names containing spaces, commas, quotes and other[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# special characters must be quoted.  Quoting one of the keywords[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "all", "sameuser", "samerole" or "replication" makes the name lose[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# its special character, and just match a database or username with[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# that name.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# This file is read on server startup and when the server receives a[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# SIGHUP signal.  If you edit the file on a running system, you have to[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# SIGHUP the server for the changes to take effect, run "pg_ctl reload",[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# or execute "SELECT pg_reload_conf()".[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Put your actual configuration here[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# ----------------------------------[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# If you want to allow non-local connections, you need to add more[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "host" records.  In that case you will also need to make PostgreSQL[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# listen on a non-local interface via the listen_addresses[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# configuration parameter, or via the -i or -h command line switches.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# DO NOT DISABLE![?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# If you change this first entry you will need to make sure that the[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# database superuser can access the database using some other method.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Noninteractive access to all databases is required during automatic[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# maintenance (custom daily cronjobs, replication, and similar tasks).[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H#[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Database administrative login by Unix domain socket[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hlocal   all[13Cpostgres[32Cpeer[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# TYPE  DATABASE[8CUSER[12CADDRESS[17CMETHOD[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# "local" is for Unix domain socket connections only[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hlocal   all[13Call[37Cmd5[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# IPv4 local connections:[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hhost    all[13Call[13C127.0.0.1/32[12Cmd5[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# IPv6 local connections:[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hhost    all[13Call[13C::1/128[17Cmd5[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# Allow replication connections from localhost, by a user with the[?25h[?25l[1;17r[17;1H
+[1;18r[17;1H# replication privilege.[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hlocal   replication     all[37Cpeer[?25h[?25l[1;17r[17;1H
+[1;18r[17;1Hhost    replication     all[13C127.0.0.1/32[12Cmd5[?25h[16;1H[15;1H[14;1H[?25l[18;1H:[?2004h[?25hwq[?25l[?2004l"/etc/postgresql/12/main/pg_hba.conf" 103 lines, 4932 characters written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;root@ubuntu2004: ~root@ubuntu2004:~# vi /etc/postgresql/12/main/pg_hba.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo sytemctl restart [1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpostgresql
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo systemctl restart postgresql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvi /etc/postgresql/12/main/pg_hba.conf[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Psudo systemctl restart postgresql[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo su - postgres
+postgres@ubuntu2004:~$ psql -U rahul -d mydb -W
+Password: 
+psql (12.22 (Ubuntu 12.22-0ubuntu0.20.04.4))
+Type "help" for help.
+
+mydb=> select us[K[Kcurrent_user;
+ current_user 
+--------------
+ rahul
+(1 row)
+
+mydb=> create r[Ktable debug3(name varchar(10) , age numeric(2));
+CREATE TABLE
+mydb=> insert into debug3 values('rahul',26);
+INSERT 0 1
+mydb=> select [K[K[K[K[K[K[Kcommit;
+WARNING:  there is no transaction in progress
+COMMIT
+mydb=> select * from debug3;
+ name  | age 
+-------+-----
+ rahul |  26
+(1 row)
+
+mydb=> exit 
+postgres@ubuntu2004:~$ vim connect.py 
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.31, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.31
+apt install neovim      # version 0.4.3-3
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.31
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.31
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.31
+
+Ask your administrator to install one of them.
+
+postgres@ubuntu2004:~$ vim connect.py [C[1P[H[2Jpostgres@ubuntu2004:~$ vi connect.py 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"connect.py" [New File][2;1H[94m~                                                                                  [3;1H~                                                                                  [4;1H~                                                                                  [5;1H~                                                                                  [6;1H~                                                                                  [7;1H~                                                                                  [8;1H~                                                                                  [9;1H~                                                                                  [10;1H~                                                                                  [11;1H~                                                                                  [12;1H~                                                                                  [13;1H~                                                                                  [14;1H~                                                                                  [15;1H~                                                                                  [16;1H~                                                                                  [17;1H~                                                                                  [1;1H[?25h[?2004l[>4;m[?25l[mi[?25h[?25l[?25h[?2004h[>4;2m[?25l[1;1H[K[1;1H[?25h[?2004l[>4;m[?2004h[>4;2m[?2004l[>4;m[?25li[?25h[?25li[?25h[?25li[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?2004h[>4;2m[?25l[1;1H[K[1;1H[?25h[?2004l[>4;m[?2004h[>4;2m[?25l[18;1H[K[18;1H:[?2004h[?25hwq[?25l[?2004l"connect.py" [New File] 1 line, 1 character written
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0tpostgres@ubuntu2004:~$ vim [K[K connect.pu[Ky
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"connect.py" 1 line, 1 character[2;1H[94m~                                                                                  [3;1H~                                                                                  [4;1H~                                                                                  [5;1H~                                                                                  [6;1H~                                                                                  [7;1H~                                                                                  [8;1H~                                                                                  [9;1H~                                                                                  [10;1H~                                                                                  [11;1H~                                                                                  [12;1H~                                                                                  [13;1H~                                                                                  [14;1H~                                                                                  [15;1H~                                                                                  [16;1H~                                                                                  [17;1H~                                                                                  [1;1H[?25h[?2004l[>4;m[?2004h[>4;2m[?25l[m[18;1H[K[18;1H:[?2004h[?25hq![?25l[?2004l[18;1H[K[18;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0tpostgres@ubuntu2004:~$ vi connect.py
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"connect.py" 1 line, 1 character[2;1H[94m~                                                                                  [3;1H~                                                                                  [4;1H~                                                                                  [5;1H~                                                                                  [6;1H~                                                                                  [7;1H~                                                                                  [8;1H~                                                                                  [9;1H~                                                                                  [10;1H~                                                                                  [11;1H~                                                                                  [12;1H~                                                                                  [13;1H~                                                                                  [14;1H~                                                                                  [15;1H~                                                                                  [16;1H~                                                                                  [17;1H~                                                                                  [1;1H[?25h[?2004l[>4;m[?2004h[>4;2m[?25l[m[18;1H[K[18;1H:[?2004h[?25hq![?25l[?2004l[18;1H[K[18;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0tpostgres@ubuntu2004:~$ exit 
+logout
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install clipit
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  libayatana-appindicator3-1 libayatana-indicator3-7 libxdo3 xdotool
+The following NEW packages will be installed:
+  clipit libayatana-appindicator3-1 libayatana-indicator3-7 libxdo3 xdotool
+0 upgraded, 5 newly installed, 0 to remove and 652 not upgraded.
+Need to get 166 kB of archives.
+After this operation, 709 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Waiting for headers][0m                        Get:1 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 libayatana-indicator3-7 amd64 0.6.3-1 [27.5 kB]
+[33m0% [1 libayatana-indicator3-7 0 B/27.5 kB 0%][0m[33m                                             17% [Working][0m             Get:2 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 libayatana-appindicator3-1 amd64 0.5.4-2 [21.8 kB]
+[33m17% [2 libayatana-appindicator3-1 0 B/21.8 kB 0%][0m[33m                                                 32% [Working][0m             Get:3 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 libxdo3 amd64 1:3.20160805.1-4 [21.0 kB]
+[33m32% [3 libxdo3 0 B/21.0 kB 0%][0m[33m                              46% [Working][0m             Get:4 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 xdotool amd64 1:3.20160805.1-4 [41.5 kB]
+[33m46% [4 xdotool 70 B/41.5 kB 0%][0m[33m                               70% [Waiting for headers][0m                         Get:5 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 clipit amd64 1.4.4+git20190202-1 [54.7 kB]
+[33m70% [5 clipit 568 B/54.7 kB 1%][0m[33m81% [5 clipit 24.5 kB/54.7 kB 45%][0m[33m81% [5 clipit 24.5 kB/54.7 kB 45%][0m[33m                                  100% [Working][0m              Fetched 166 kB in 4s (44.8 kB/s)
+
+7[0;17r8[1ASelecting previously unselected package libayatana-indicator3-7:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 155589 files and directories currently installed.)
+Preparing to unpack .../libayatana-indicator3-7_0.6.3-1_amd64.deb ...
+7[18;0f[42m[30mProgress: [  0%][49m[39m [.............................................................] 87[18;0f[42m[30mProgress: [  5%][49m[39m [##...........................................................] 8Unpacking libayatana-indicator3-7:amd64 (0.6.3-1) ...
+7[18;0f[42m[30mProgress: [ 10%][49m[39m [#####........................................................] 8Selecting previously unselected package libayatana-appindicator3-1.
+Preparing to unpack .../libayatana-appindicator3-1_0.5.4-2_amd64.deb ...
+7[18;0f[42m[30mProgress: [ 14%][49m[39m [########.....................................................] 8Unpacking libayatana-appindicator3-1 (0.5.4-2) ...
+7[18;0f[42m[30mProgress: [ 19%][49m[39m [###########..................................................] 8Selecting previously unselected package libxdo3:amd64.
+Preparing to unpack .../libxdo3_1%3a3.20160805.1-4_amd64.deb ...
+7[18;0f[42m[30mProgress: [ 24%][49m[39m [##############...............................................] 8Unpacking libxdo3:amd64 (1:3.20160805.1-4) ...
+7[18;0f[42m[30mProgress: [ 29%][49m[39m [#################............................................] 8Selecting previously unselected package xdotool.
+Preparing to unpack .../xdotool_1%3a3.20160805.1-4_amd64.deb ...
+7[18;0f[42m[30mProgress: [ 33%][49m[39m [####################.........................................] 8Unpacking xdotool (1:3.20160805.1-4) ...
+7[18;0f[42m[30mProgress: [ 38%][49m[39m [#######################......................................] 8Selecting previously unselected package clipit.
+Preparing to unpack .../clipit_1.4.4+git20190202-1_amd64.deb ...
+7[18;0f[42m[30mProgress: [ 43%][49m[39m [##########################...................................] 8Unpacking clipit (1.4.4+git20190202-1) ...
+7[18;0f[42m[30mProgress: [ 48%][49m[39m [#############################................................] 8Setting up libxdo3:amd64 (1:3.20160805.1-4) ...
+7[18;0f[42m[30mProgress: [ 52%][49m[39m [###############################..............................] 87[18;0f[42m[30mProgress: [ 57%][49m[39m [##################################...........................] 8Setting up libayatana-indicator3-7:amd64 (0.6.3-1) ...
+7[18;0f[42m[30mProgress: [ 62%][49m[39m [#####################################........................] 87[18;0f[42m[30mProgress: [ 67%][49m[39m [########################################.....................] 8Setting up xdotool (1:3.20160805.1-4) ...
+7[18;0f[42m[30mProgress: [ 71%][49m[39m [###########################################..................] 87[18;0f[42m[30mProgress: [ 76%][49m[39m [##############################################...............] 8Setting up libayatana-appindicator3-1 (0.5.4-2) ...
+7[18;0f[42m[30mProgress: [ 81%][49m[39m [#################################################............] 87[18;0f[42m[30mProgress: [ 86%][49m[39m [####################################################.........] 8Setting up clipit (1.4.4+git20190202-1) ...
+7[18;0f[42m[30mProgress: [ 90%][49m[39m [#######################################################......] 87[18;0f[42m[30mProgress: [ 95%][49m[39m [##########################################################...] 8Processing triggers for mime-support (3.64ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+Processing triggers for gnome-menus (3.36.0-1ubuntu1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for desktop-file-utils (0.24-1ubuntu3) ...
+
+7[0;18r8[1A[J]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install clipit[5Psu - postgres
+postgres@ubuntu2004:~$ vim connect.py 
+
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.31, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.31
+apt install neovim      # version 0.4.3-3
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.31
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.31
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.31
+
+Ask your administrator to install one of them.
+
+postgres@ubuntu2004:~$ vim connect.py [C
+\
+Command 'vim' not found, but can be installed with:
+
+apt install vim         # version 2:8.1.2269-1ubuntu5.31, or
+apt install vim-tiny    # version 2:8.1.2269-1ubuntu5.31
+apt install neovim      # version 0.4.3-3
+apt install vim-athena  # version 2:8.1.2269-1ubuntu5.31
+apt install vim-gtk3    # version 2:8.1.2269-1ubuntu5.31
+apt install vim-nox     # version 2:8.1.2269-1ubuntu5.31
+
+Ask your administrator to install one of them.
+
+postgres@ubuntu2004:~$ \vim connect.py [1P
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"connect.py" 1 line, 1 character[2;1H[94m~                                                                                  [3;1H~                                                                                  [4;1H~                                                                                  [5;1H~                                                                                  [6;1H~                                                                                  [7;1H~                                                                                  [8;1H~                                                                                  [9;1H~                                                                                  [10;1H~                                                                                  [11;1H~                                                                                  [12;1H~                                                                                  [13;1H~                                                                                  [14;1H~                                                                                  [15;1H~                                                                                  [16;1H~                                                                                  [17;1H~                                                                                  [1;1H[?25h[?2004l[>4;m[?2004h[>4;2m[?25l[m[18;1H[K[18;1H:[?2004h[?25hq![?25l[?2004l[18;1H[K[18;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0tpostgres@ubuntu2004:~$ exit 
+logout
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt isn[K[Knstall virtualbox-guest-utilsreboot
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package virtualbox-guest-utilsreboot[0m
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install virtualbox-guest-utilsreboot[C reboot
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+[1;31mE: [0mUnable to locate package reboot[0m
+]0;root@ubuntu2004: ~root@ubuntu2004:~# sudo apt install virtualbox-guest-utils reboot[K[K[K[K[K[K[K[Ks
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Suggested packages:
+  virtualbox-guest-x11
+The following NEW packages will be installed:
+  virtualbox-guest-utils
+0 upgraded, 1 newly installed, 0 to remove and 652 not upgraded.
+Need to get 893 kB of archives.
+After this operation, 6,087 kB of additional disk space will be used.
+[33m0% [Working][0m[33m0% [Working][0m[33m0% [Connecting to ubuntu-mirror-1.ps6.canonical.com][0m[33m0% [Connecting to ubuntu-mirror-1.ps6.canonical.com (91.189.91.81)][0m                                                                   Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 virtualbox-guest-utils amd64 6.1.50-dfsg-1~ubuntu1.20.04.1 [893 kB]
+[33m                                                                   1% [1 virtualbox-guest-utils 12.1 kB/893 kB 1%][0m[33m3% [1 virtualbox-guest-utils 29.4 kB/893 kB 3%][0m[33m7% [1 virtualbox-guest-utils 72.8 kB/893 kB 8%][0m[33m17% [1 virtualbox-guest-utils 193 kB/893 kB 22%][0m[33m46% [1 virtualbox-guest-utils 518 kB/893 kB 58%][0m[33m                                                100% [Working][0m              Fetched 893 kB in 4s (210 kB/s)
+
+7[0;17r8[1ASelecting previously unselected package virtualbox-guest-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 155646 files and directories currently installed.)
+Preparing to unpack .../virtualbox-guest-utils_6.1.50-dfsg-1~ubuntu1.20.04.1_amd64.deb ...
+7[18;0f[42m[30mProgress: [  0%][49m[39m [.............................................................] 87[18;0f[42m[30mProgress: [ 20%][49m[39m [############.................................................] 8Unpacking virtualbox-guest-utils (6.1.50-dfsg-1~ubuntu1.20.04.1) ...
+7[18;0f[42m[30mProgress: [ 40%][49m[39m [########################.....................................] 8Setting up virtualbox-guest-utils (6.1.50-dfsg-1~ubuntu1.
