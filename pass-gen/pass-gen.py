@@ -1,3 +1,8 @@
+#-----------------------------------------------------------#
+# Author:- Aliv
+# Descripition:- to generate a password for user
+# Date:- 31/03/2026
+#-----------------------------------------------------------#
 import random
 import string
 
